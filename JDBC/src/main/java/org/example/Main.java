@@ -1,5 +1,7 @@
 package org.example;
+
 //1)Import the package
+
 import java.sql.*;
 
 import static java.sql.DriverManager.getConnection;
@@ -18,6 +20,7 @@ public class Main {
         //hi
         String name = "root";
         String pass = "Password";
+
         Integer userId = 10;
         String userName = "Ram";
         //String query = "select username from student where userid =1";
@@ -60,6 +63,16 @@ public class Main {
         System.out.println("rows affected : "+count);
         res.close();
         con.close();
+
+
+        String query = "select username from student where userid =1";
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        Connection con = DriverManager.getConnection(url,name,pass);
+        Statement st = con.createStatement();
+        ResultSet res = st.executeQuery(query);
+        res.next();
+        String nam = res.getString("username");
+        System.out.println(nam);
 
     }
 }
