@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean class="org.example.B" name="bref">
+          <property name="y" value="100000" />
+
+       </bean>
+    <bean class="org.example.A" name="aref">
+        <property name="x" value="1"  />
+<!--        <property name="ob">-->
+<!--            <ref bean="bref" />-->
+<!--        </property>-->
+        <property name="ob" ref="bref" />
+
+    </bean>
+
+
+</beans>
