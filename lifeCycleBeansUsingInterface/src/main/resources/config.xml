@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    <bean class="org.example.Person" name="person" >-->
+    <!--        <constructor-arg>-->
+    <!--            <value>Amit</value>-->
+    <!--        </constructor-arg>-->
+    <!--        <constructor-arg>-->
+    <!--            <value>01</value>-->
+    <!--        </constructor-arg>-->
+    <!--    </bean>-->
+<!--//using interface-->
+<bean class="org.example.Samosa" name="s1" >
+    <property name="price" value="20"/>
+</bean>
+
+<bean class="org.example.Pepsi" name="p1"    >
+    <property name="price" value="40"/>
+</bean>
+
+
+
+
+
+</beans>
