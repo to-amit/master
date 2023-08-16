@@ -27,8 +27,7 @@ public class Example {
     public void start(){
         System.out.println("starting method");
     }
-    @PreDestroy
-    public void end(){
+    @PreDestroy   public void end(){
         System.out.println("ending method");
     }
 }
