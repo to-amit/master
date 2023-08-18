@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+   <context:annotation-config/>
+    <bean class="org.example.Address" name="address">
+        <property name="street" value="Chhajan"/>
+        <property name="city" value="Muzaffarput"/>
+    </bean>
+    <bean class="org.example.Address" name="add2">
+        <property name="street" value="Turki"/>
+        <property name="city" value="Muzaffarput"/>
+    </bean>
+<!--    &lt;!&ndash;      checks variable name&ndash;&gt;-->
+<!--    <bean class="org.example.Emp" name="emp1" autowire="byName"/>-->
+<!--    &lt;!&ndash;    checks variable type&ndash;&gt;-->
+<!--    &lt;!&ndash;    this will give an erroe is there is more than on bean of same type&ndash;&gt;-->
+<!--    &lt;!&ndash;       <bean class="org.example.Emp" name="emp2" autowire="byType"/>&ndash;&gt;-->
+    <bean class="org.example.Emp" name="emp1" />
+
+
+
+
+
+</beans>
